@@ -26,7 +26,7 @@ module Moonshine
 
       file '/var/cache/preseeding/msttcorefonts.seed',
         :ensure => :present,
-        :content => template('msttcorefonts.seed')
+        :content => template(File.join(File.dirname(__FILE__), '..', '..', 'templates','msttcorefonts.seed'))
 
       package 'msttcorefonts',
         :ensure => :installed,
