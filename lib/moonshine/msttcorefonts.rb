@@ -15,6 +15,24 @@ module Moonshine
       # options specified with the configure method will be 
       # automatically available here in the options hash.
       #    options[:foo]   # => true
+
+
+      # This accepts Microsoft's EULA for corefonts. Deploying implies that you've accepted this as well
+      #   http://corefonts.sourceforge.net/eula.htm
+
+      file '/var/cache/preseeding',
+        :ensure => :directory,
+        :alias => 'preseeding directory'
+
+      file '/var/cache/preseeding/msttcorefonts.seed',
+        :ensure => :present,
+        :content => template('msttcorefonts.seed')
+
+      package 'msttcorefonts',
+        :ensure => :installed,
+        :responsefile => '/var/cache/preseeding/msttcorefonts.seed',
+        :require => '/var/cache/preseeding/msttcorefonts.seed'
+
     end
     
   end
