@@ -4,6 +4,8 @@
 
 Welcome to Moonshine::Msttcorefonts, a [Moonshine](http://github.com/railsmachine/moonshine) plugin for installing and managing [msttcorefonts](http://corefonts.sourceforge.net/).  This package is commonly needed when using Prince XML ([moonshine_prince](https://github.com/railsmachine/moonshine_prince))
 
+**Note:** This accepts Microsoft's EULA for corefonts. Deploying implies that you've accepted this as well [http://corefonts.sourceforge.net/eula.htm](http://corefonts.sourceforge.net/eula.htm).
+
 Here's some quick links:
 
  * [Homepage](http://github.com/railsmachine/moonshine_msttcorefonts)
