@@ -31,7 +31,7 @@ module Moonshine
       package 'msttcorefonts',
         :ensure => :installed,
         :responsefile => '/var/cache/preseeding/msttcorefonts.seed',
-        :require => '/var/cache/preseeding/msttcorefonts.seed'
+        :require => file('/var/cache/preseeding/msttcorefonts.seed')
 
     end
     
