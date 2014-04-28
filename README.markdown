@@ -37,3 +37,7 @@ Once it's installed, you can include it in your manifest:
 ## Configuration Options
 
 This plugin does not currently need any configuration options.
+
+***
+
+Unless otherwise specified, all content copyright &copy; 2014, [Rails Machine, LLC](http://railsmachine.com)
